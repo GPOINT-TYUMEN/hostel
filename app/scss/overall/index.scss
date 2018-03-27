@@ -1,0 +1,84 @@
+//> OVERALL
+$bgBtn1: #ffcc00;
+$colorBtn1: #242424;
+[class*="btn_"] {
+	padding: 10px 0;
+	@include radius(5px);
+	outline: 0;
+	cursor: pointer;
+	display: inline-block;
+    text-align: center;
+}
+
+.module_title {
+	text-align: center;
+	font-family: $GilroySemiBold;
+	color: #242424;
+	font-size: 30px;
+	line-height: 32px;
+	margin-top: 50px;		
+}
+	
+.btn_1 {
+	width: 158px;
+	background-color: $bgBtn1;
+	color: $colorBtn1;
+	border: 1px solid $bgBtn1;	
+	font-family: $GilroySemiBold;
+	font-size: 16px;
+} 
+.btn_1:hover,
+.btn_4:hover {
+	transition: 0.4s;
+	background-color: transparent;
+	color: $bgBtn1;
+}
+
+.btn_4 {
+	width: 215px;
+	background-color: $bgBtn1;
+	color: $colorBtn1;
+	border: 1px solid $bgBtn1;	
+	font-family: $GilroySemiBold;
+	font-size: 16px;
+} 
+
+.btn_2 {
+	width: 158px;
+	background-color: #FFF;
+	color: #ef722c;
+	border: 1px solid #FFF;	
+	font-family: $GilroySemiBold;
+	font-size: 16px;
+} 
+.btn_2:hover {
+	transition: 0.4s;
+	background-color: transparent;
+	color: #FFF;
+}
+
+
+.btn_3 {
+  width: 195px;
+  background-color: $bgBtn1;
+  color: #242424;
+  border: 2px solid #FFF;  
+  font-family: $GilroySemiBold;
+  font-size: 16px;
+} 
+
+.btn_3:hover {
+  transition: 0.4s;
+  color: #FFF;
+}
+
+[class*="route-"] {
+	position: absolute;
+}
+
+@media screen and (max-width: 524px) and (min-width: 320px) {
+	.module_title {
+		font-size: 24px;
+		line-height: 26px;
+	}
+}

@@ -1,0 +1,77 @@
+@@include('header.html', {
+	"title": "",
+	"desc": "",
+	"h1": "",
+	"css": [
+		"template"
+	]
+})	
+
+@@include('site/modules/header-nav/module.html')
+<div class="modules">
+	@@include('site/modules/header-bunner-slider/module.html')
+	@@include('site/modules/module-contacts-1/module.html')
+	@@include('site/modules/galery-images-1/module.html', {
+		"title": "Общие места на 4 и 6 мест",
+		"photo": "photo-1.jpg",
+		"class": "grey"
+	})
+	@@include('site/modules/catalog-2/module.html')
+	@@include('site/modules/galery-images-1/module.html', {
+		"title": "Номера СВ на 2 места",
+		"photo": "photo-2.jpg",
+		"class": ""
+	})
+	@@include('site/modules/catalog-3/module.html', {
+		"img": "photo-3.jpg",
+		"title": "850",
+		"caption": "В сутки за человека",
+		"desc": [
+			{"content": "Отдельный номер с <br/> индивидуальной<br/> кроватью."},
+			{"content": "Прикроватные светильники,<br/> розетки, коврики.<br/> Wi-Fi."},
+			{"content": "Гиппоалергенные одеяла и<br/> подушки. Свежее постельное белье.<br/> Чистое полотенце."},
+			{"content": "Тумбочки, зеркало, полки для<br/> вещей."},
+			{"content": "Индивидуальный шкаф<br/> с ключом."}
+		]
+	})
+	@@include('site/modules/galery-images-1/module.html', {
+		"title": "Семейный на 3 человека",
+		"photo": "photo-4.jpg",
+		"class": "grey"
+	})
+	@@include('site/modules/catalog-3/module.html', {
+		"img": "photo-5.jpg",
+		"title": "1500р",
+		"caption": "В сутки за весь номер.",
+		"desc": [
+			{"content": "Гиппоалергенные одеяла и подушки. Свежее постельное белье. Чистые полотенца."},
+			{"content": "Просторный номер с двумя кроватями (двухспасльная и полуторная)."},
+			{"content": "Прикроватные светильники, розетки, коврики.Чистое полотенце. WI-FI."},
+			{"content": "ЖК телевизор. Шкаф для вещей. Детский стол и стул."},
+			{"content": "Тумбочки. Зеркало. Полки для вещей."}
+		]
+	})
+	@@include('site/modules/galery-images-1/module.html', {
+		"title": "Общие зоны",
+		"photo": "photo-6.jpg",
+		"class": "grey"
+	})	
+	@@include('site/modules/numbers-items/module.html')
+	@@include('site/modules/title-button/module.html')
+
+	@@include('site/modules/catalog-slider/module.html')
+	@@include('site/modules/galery-images/module.html')
+	@@include('site/modules/comments/module.html')
+	@@include('site/modules/comments-2/module.html')
+	@@include('site/modules/module-contacts-2/module.html')
+	@@include('site/modules/footer/module.html')
+</div>
+
+@@include('site/widgets/modal/widget.html')
+@@include('site/widgets/photoswipe/widget.html')
+
+@@include('footer.html', {
+	"js": [
+		"template"
+	]
+})

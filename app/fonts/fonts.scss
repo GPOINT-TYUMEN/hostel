@@ -1,0 +1,19 @@
+$GilroyBold: 'Gilroy-Bold';
+$Gilroy: 'Gilroy-Regular';
+$GilroySemiBold: 'Gilroy-Semibold';
+$GilroyItalic: 'Gilroy-RegularItalic';
+$GilroyMed: 'Gilroy-Medium';
+$GilroyHevy: 'Gilroy-Heavy';
+
+$ProximaSemiboldItalic: 'ProximaNovaSemiboldItalic';
+
+@include fonts($GilroyBold, 'gilroy/');
+@include fonts($Gilroy, 'gilroy/');
+@include fonts($GilroySemiBold,  'gilroy/');
+@include fonts($GilroyItalic,  'gilroy/');
+@include fonts($GilroyMed, 'gilroy/');
+@include fonts($GilroyHevy, 'gilroy/');
+
+@include fonts($ProximaSemiboldItalic, 'proxima/');
+
+

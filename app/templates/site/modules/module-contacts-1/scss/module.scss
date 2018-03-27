@@ -1,0 +1,218 @@
+$inpuTBorder: #28333d;
+$colorInputTile: #28333d;
+$colorFormTitle: #28333d;
+$bgCheckPolitica: #FFF;
+$colorPolitica: #242424;
+$colorPoliticaA: #FFF;
+$bgContacts: #ffcc00;
+$colorError: red;
+$colorSuccess: green;
+
+$bgErrorInput: rgba(255, 0, 0, 0.12);
+.module-contacts-1 {
+	background-color: $bgContacts;
+	padding-bottom: 35px;
+	min-height: 430px;
+
+	form {
+		margin: auto;
+		margin-top: 35px;
+	}
+
+	.left-content {
+		float: left;
+		max-width: 430px;
+	}
+
+	.right-content {
+		float: right;
+		max-width: 420px;
+	}
+
+	.left-content,
+	.right-content {
+		width: 100%;
+	}
+
+	.form-title {
+		margin-top: 35px;
+		margin-bottom: 30px;
+		font-family: $GilroyBold;
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.inputs {
+		text-align: justify
+	}
+
+	.inputs:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.input {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		input[type="text"] {
+			min-height: 50px;
+			padding-left: 15px;
+		}
+
+		textarea {
+			resize: none;
+			min-height: 130px;
+			padding: 10px;
+		}
+
+		input[type="text"], textarea {
+			outline: 0;
+			margin-top: 10px;		
+			display: inline-block;
+			width: 100%;	
+			border: none;
+			@include radius(6px);
+			margin-top: 30px;
+			font-family: $GilroyMed;	
+			font-size: 18px;
+			color: #8e8e8e;
+		}
+
+		input[type="text"].error, textarea.error {
+			background-color: $bgErrorInput;
+			transition: 0.4s;
+		}
+	}
+
+	.input-2 {
+		max-width: 300px;
+		height: 98px;
+	}
+
+	.input-title {
+		padding-left: 15px;
+		font-family: $Gilroy;
+		color: $colorInputTile;
+		font-size: 18px;
+	}
+
+	//> MESSAGE SEND
+	.msg {
+
+	}
+
+	.msg.success {
+		color: $colorSuccess;
+	}
+
+	.msg.error {
+		color: $colorError;
+	}
+	//< MESSAGE SEND
+
+	.politica {
+		cursor: pointer;
+		margin-top: 40px;
+		.check {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 16px;
+			height: 16px;
+			border: 2px solid $bgCheckPolitica;
+			background-color: $bgCheckPolitica;
+			svg {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 1px;
+				max-width: 10px;
+				max-height: 10px;
+				margin: auto;
+				transition: 0.4s;
+
+				.svg-check {
+					fill: #8e8e8e;
+				}
+			}
+		}
+
+		.check[check="true"] svg {
+			transform: rotate(0deg) scale(1);
+			opacity: 1;
+		}
+
+		.check[check=""] svg,
+		.check[check="false"] svg {
+			transform: rotate(50deg) scale(1.8);
+			opacity: 0;			
+		}
+
+		.check.warning {
+			transition: 0.4s;
+			border-color: red;
+		}
+		
+		.caption {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 15px;
+			font-family: $GilroyItalic;
+			font-size: 11px;
+			color: $colorPolitica;
+			font-weight: bold;
+
+			a {
+				color: $colorPoliticaA;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	[class*="btn_"] {
+		margin-top: 19px;
+	}
+}
+
+@media screen and (max-width: 660px) and (min-width: 320px) {
+	.module-contacts-1 {
+		.input-2 {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 524px) and (min-width: 320px) {
+	.module-contacts-1 {
+
+		.form-title {
+			font-size: 16px;
+			font-family: $Gilroy;
+			line-height: 18px;
+		}		
+
+		.input-2 {
+			max-width: 100%;
+		}
+
+		.politica {
+			.caption {
+				margin-left: 5px;
+				width: 85%;
+			}
+		}
+
+		.input {
+			input[type="text"], textarea {
+				font-size: 18px;
+			}
+		}	
+
+		.form-send {
+			text-align: center;
+		}	
+	}
+}

@@ -1,0 +1,15 @@
+//=include ../templates/site/plugins/lazyload/js/plugin.js
+//=include ../templates/site/plugins/owl/js/plugin.js
+//=include ../templates/site/plugins/seo/js/plugin.js
+//=include ../templates/site/plugins/form/js/plugin.js
+//=include ../templates/site/widgets/modal/js/widget.js
+//=include ../templates/site/widgets/photoswipe/js/widget.js
+//=include ../templates/site/modules/header-nav/js/module.js
+//=include ../templates/site/modules/header-bunner-slider/js/module.js
+//=include ../templates/site/modules/galery-images-1/js/module.js
+//=include ../templates/site/modules/catalog-slider/js/module.js
+//=include ../templates/site/modules/сonsequences-module-1/js/module.js
+//=include ../templates/site/modules/numbers-items/js/module.js
+//=include ../templates/site/modules/number-items-3/js/module.js
+//=include ../templates/site/modules/comments/js/module.js
+//=include ../templates/site/modules/comments-2/js/module.js

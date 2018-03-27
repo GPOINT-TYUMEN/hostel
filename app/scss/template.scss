@@ -1,0 +1,37 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+
+//> OVERALL
+@import "overall/colors.scss";
+@import "overall/index.scss";
+//< OVERALL  
+
+//> PLUGINS
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+//> PLUGINS
+
+//> WIDGETS
+@import "../templates/site/widgets/modal/scss/widget.scss";
+@import "../templates/site/widgets/photoswipe/scss/widget.scss";
+//> WIDGETS
+
+
+//> MODULES
+@import "../templates/site/modules/header-nav/scss/module.scss";
+@import "../templates/site/modules/header-bunner-slider/scss/module.scss";
+@import "../templates/site/modules/module-contacts-1/scss/module.scss";
+@import "../templates/site/modules/galery-images-1/scss/module.scss";
+@import "../templates/site/modules/catalog-2/scss/module.scss";
+@import "../templates/site/modules/catalog-3/scss/module.scss";
+@import "../templates/site/modules/title-button/scss/module.scss";
+
+@import "../templates/site/modules/сonsequences-module-1/scss/module.scss";
+@import "../templates/site/modules/number-items-3/scss/module.scss";
+@import "../templates/site/modules/numbers-items/scss/module.scss";
+@import "../templates/site/modules/catalog-slider/scss/module.scss";
+@import "../templates/site/modules/galery-images/scss/module.scss";
+@import "../templates/site/modules/comments/scss/module.scss";
+@import "../templates/site/modules/comments-2/scss/module.scss";
+@import "../templates/site/modules/module-contacts-2/scss/module.scss";
+@import "../templates/site/modules/footer/scss/module.scss";
+//< MODULES

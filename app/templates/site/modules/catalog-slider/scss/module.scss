@@ -1,0 +1,90 @@
+.catalog-slider {
+	min-height: 650px;
+	background-color: #f8f8f8;
+
+	[class^="route-"] {
+		top: 175px;
+	}
+
+	[class^="route-"]:hover {
+		transition: 0.4s;
+		opacity: 0.7;
+	}	
+	.route-left {
+		left: -25px;
+	}
+
+	.route-right {
+		right: -25px;
+	}
+
+	.catalog-slider-content {
+		position: relative;
+		margin-top: 60px;
+
+		.item {
+			float: left;
+			width: 100%;
+			max-width: 300px;
+			text-align: center;
+			margin-right: 20px;
+		}
+
+		.item-bg {
+			figure:not(:first-child) {
+				display: none;
+			}
+		}
+
+		.item-wrapper {
+			background-color: #FFF;
+			padding-bottom: 15px;
+		}
+
+		.item-title {
+			font-family: $GilroyBold;
+			font-size: 20px;
+			color: #191919;
+			margin-top: 20px;
+		}
+
+		.item-stroke {
+			font-family: $GilroyMed;
+			font-size: 16px;
+			color: #191919;
+			line-height: 18px;
+			margin-top: 17px;
+		}
+
+		.item-caption {
+			font-family: $GilroyBold;
+			font-size: 24px;
+			color: #191919;
+			margin-top: 15px;			
+		}
+
+		[class*="btn_"] {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.catalog-slider {
+		.route-left {
+			left: 0;
+		}
+
+		.route-right {
+			right: 0;
+		}
+
+		.catalog-slider-content {
+			.item {
+				float: none !important;
+				margin: auto;
+				max-width: 245px;
+			}
+		}
+	}
+}

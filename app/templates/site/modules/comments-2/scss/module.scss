@@ -1,0 +1,109 @@
+.comments-2 {
+	padding-bottom: 65px;
+	
+	[class*="route-"] {
+		top: 175px;
+		display: none;
+	}
+
+	.route-right {
+		right: 0;
+	}
+	.route-left {
+		left: 0;
+	}
+
+	.comments-2-content {
+		margin-top: 55px;
+		position: relative;
+
+		.item {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			max-width: 303px;
+		}
+
+		.item-desc {
+			font-family: $GilroyMed;
+			line-height: 18px;
+			font-size: 16px;			
+			text-align: left;
+			min-height: 258px;
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 12px;
+			background-color: #f8f8f8;
+
+			.desc-footer {
+				display: inline-block;
+				width: 100%;
+				margin-top: 35px;
+			
+				span {
+					cursor: pointer;
+					position: relative;
+					font-family: $Gilroy;
+					font-size: 14px;
+					color: #252525;
+					display: inline-block;
+				}
+
+				span:after {
+					content: "";
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 1px;
+					background-color: #252525;
+				}
+
+				span:hover {
+					text-decoration: none !important;
+					transition: 0.4s;
+					opacity: 0.7;
+				}
+			}				
+		}
+	}
+
+	.comments-wrapper {
+		text-align: justify;
+	}
+
+	.comments-wrapper:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.module-caption {
+		font-family: $GilroyBold;		
+		font-size: 24px;
+		color: #ef722c;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.comments-2 {
+		[class*="route-"] {
+			display: block;
+		}
+
+		.comments-wrapper {
+			text-align: center;
+		}		
+
+		.comments-2-content {
+			margin-top: 55px;
+			position: relative;		
+			.item {
+				max-width: 240px;
+			}
+		}	
+	}
+}

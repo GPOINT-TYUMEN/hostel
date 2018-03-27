@@ -1,0 +1,320 @@
+.top-nav-fixed {
+
+	.top-nav-fixed-content {
+		position: fixed;
+		top: 20px;
+		left: 150px;
+		z-index: 10;
+	}
+
+	.item-content {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+	}
+
+
+	.burger {
+		cursor: pointer;
+
+		:hover {
+			transition: 0.4s;
+			opacity: 0.8;
+		}
+
+		i {
+			font-size: 2.1vw;
+		}
+	}	
+
+	.account {
+		a {
+			position: relative;
+			display: block;
+			margin-top: 0.2vw;
+			text-decoration: none !important;
+			font-family: $GilroyItalic;
+			font-size: 1.3vw;
+			color: $grey;
+		}
+
+		a:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $grey;
+		}		
+	}
+}
+
+.left-nav-fixed {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;	
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.49);
+	z-index: 1000;
+
+	.burger {
+		cursor: pointer;
+
+		:hover {
+			transition: 0.4s;
+			opacity: 0.8;
+		}
+
+		i {
+			font-size: 2.1vw;
+		}
+	}	
+	.top-info {
+		margin-top: 20px;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.line {
+		margin-top: 20px;
+		width: 75px;
+		height: 4px;
+		background-color: #3a3a3a;
+	}
+	.nav {
+		transition: 0.4s;
+		position: fixed;
+		top: 0;
+		left: -100%;
+	    width: 100%;
+	    max-width: 442px;
+		height: 100%;
+		padding-left: 5%;
+
+		background-color: #FFF;
+	}
+
+
+	.account {
+		float: left;
+
+		a {
+			position: relative;
+			display: block;
+			margin-top: 0.2vw;
+			text-decoration: none !important;
+			font-family: $GilroyItalic;
+			font-size: 20px;
+			color: $grey;
+		}
+
+		a:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $grey;
+		}
+	}
+
+	.burger {
+		float: right;
+		margin-right: 25px;
+		i {
+			font-size: 30px;
+			color: $grey;
+		}
+	}
+
+	.logo {
+		margin-top: 10%;
+	}
+
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			max-width: 168px;
+			position: relative;
+			font-family: $Gilroy;
+			font-size: 16px;
+			color: #3a3a3a !important;		
+			text-decoration: none !important;
+		}
+	}
+
+	li {
+		margin-top: 35px;
+	}
+
+	li.active {
+		a:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			top: 6px;
+			@include radius;
+			background-color: #3a3a3a;
+		}
+	}
+
+	li:hover {
+		transition: 0.4s;
+		opacity: 0.7;
+	}
+
+	[class*="btn_"] {
+		margin-top: 40px;
+	}
+
+	.social {
+		float: left;
+		background-color: #FFF;
+		text-align: center;
+		padding: 20px 0;
+
+		a {
+			transition: 0.4s;
+			display: inline-block;
+			margin-right: 38px;
+			text-decoration: none !important;
+		}
+
+		a:not(:first-child) {
+			margin-top: 25px;
+		}
+
+		i {
+			transition: 0.4s;
+			color: #3a3a3a;
+			font-size: 35px;
+		}
+
+		a:hover {	
+			transform: scale(0.9);
+			i {
+				color: #9c9c9c;
+			}
+		}	
+	}	
+
+
+	.mCSB_scrollTools .mCSB_draggerRail {
+		background-color: $white;
+	}
+
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: $grey;
+	}
+}
+
+
+
+.left-nav-fixed.active {
+	.nav {
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+	.top-nav-fixed {
+
+		.burger {
+			i {
+				font-size: 3vw;		
+			}
+		}
+
+		.account {
+			a {
+				font-size: 2vw;
+			}
+		}
+
+	}		
+}
+
+@media screen and (max-width: 1024px) and (min-width: 720px) {
+	.top-nav-fixed {
+		.top-nav-fixed-content {
+			
+		}
+
+		.burger {
+			i {
+				font-size: 3.5vw;		
+			}
+		}
+
+		.account {
+			a {
+				font-size: 2.5vw;
+			}
+		}
+
+	}		
+} 
+
+@media screen and (max-width: 720px) and (min-width: 576px) {
+	.top-nav-fixed {
+		.top-nav-fixed-content {
+			
+		}
+
+		.burger {
+			i {
+				font-size: 5vw;		
+			}
+		}
+
+		.account {
+			a {
+				font-size: 3vw;
+			}
+		}
+
+	}		
+} 
+
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+	.top-nav-fixed {
+		.top-nav-fixed-content {
+			
+		}
+
+		.burger {
+			i {
+				font-size: 30px;		
+			}
+		}
+
+		.account {
+			a {
+				margin-top: 6px;
+				font-size: 16px;
+			}
+		}
+
+	}		
+} 
+
+@media screen and (max-width: 1280px) and (min-width: 320px) {
+	.top-nav-fixed {
+		.top-nav-fixed-content {
+			left: 15px;
+		}
+	}	
+}

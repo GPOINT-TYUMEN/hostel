@@ -1,0 +1,27 @@
+{
+
+	"phone": "+ 7 (3452) 601-692",
+	"tel": "73452601692",
+
+
+	"project": {
+		"author": "https://vk.comwe/bcoder2014",
+		"manager": "usachenkojulia",
+		"url": "http://arion.info"
+	},
+
+
+	"mail": {
+		"email": {
+			"0": "webproger2014@gmail.com",
+			"1": "webproger2014@gmail.com"
+		},
+
+		"theme": "Тема письма",
+		"authorMsg": "От кого письмо"
+	},
+
+	"load": {
+		"dir": "arion"
+	}
+}
