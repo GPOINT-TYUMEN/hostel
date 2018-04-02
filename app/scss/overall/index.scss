@@ -27,6 +27,7 @@ $colorBtn1: #242424;
 	font-family: $GilroySemiBold;
 	font-size: 16px;
 } 
+
 .btn_1:hover,
 .btn_4:hover {
 	transition: 0.4s;
@@ -70,6 +71,22 @@ $colorBtn1: #242424;
 .btn_3:hover {
   transition: 0.4s;
   color: #FFF;
+}
+
+.btn_5 {
+	width: 158px;
+	background-color: #FFF;
+	color: #3e3e3e;
+	border: 1px solid #FFF;	
+	font-family: $GilroySemiBold;
+	font-size: 16px;
+} 
+
+.btn_5:hover {
+	transition: 0.4s;
+	background-color: transparent;
+	color: #FFF;
+	text-decoration: none !important;
 }
 
 [class*="route-"] {

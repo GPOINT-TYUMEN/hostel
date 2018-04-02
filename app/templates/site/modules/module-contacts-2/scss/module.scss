@@ -3,14 +3,13 @@ $colorInputTile2: #28333d;
 $colorFormTitle2: #28333d;
 $bgCheckPolitica2: #FFF;
 $colorPolitica2: #242424;
-$colorPoliticaA2: #f86d52;
-$bgContacts2: #f8f8f8;
+$colorPoliticaA2: #FFF;
+$bgContacts2: #ffcd00;
 $colorError2: red;
 $colorSuccess2: green;
 
 $bgErrorInput2: rgba(255, 0, 0, 0.12);
 .module-contacts-2 {
-	margin-top: 65px;
 	background-color: $bgContacts2;
 	padding-bottom: 35px;
 
@@ -62,23 +61,24 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 			resize: none;
 			min-height: 130px;
 			padding: 10px;
-			box-shadow: 8px 0 24px rgba(0,0,0,.1);
 		}
 
 		input[type="text"], textarea {
 			outline: 0;
 			margin-top: 35px;		
 			display: inline-block;
+			@include radius(6px);
+			box-shadow: 8px 0 24px rgba(0,0,0,.1);
 			width: 100%;	
 			font-family: $GilroyMed;	
 			font-size: 18px;
 			color: #8e8e8e;			
 		}
 
-		input[type="text"] ::-webkit-input-placeholder {color:#8e8e8e;}
-		input[type="text"] ::-moz-placeholder          {color:#8e8e8e;}
-		input[type="text"] :-moz-placeholder           {color:#8e8e8e;}
-		input[type="text"] :-ms-input-placeholder      {color:#8e8e8e;}
+		input[type="text"]::-webkit-input-placeholder {color:#8e8e8e;}
+		input[type="text"]::-moz-placeholder          {color:#8e8e8e;}
+		input[type="text"]:-moz-placeholder           {color:#8e8e8e;}
+		input[type="text"]:-ms-input-placeholder      {color:#8e8e8e;}
 
 		input[type="text"].error, textarea.error {
 			background-color: $bgErrorInput2;
@@ -121,6 +121,7 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 			vertical-align: top;
 			width: 16px;
 			height: 16px;
+			background-color:  $bgCheckPolitica2;
 			border: 2px solid $bgCheckPolitica2;
 			svg {
 				position: absolute;
@@ -133,7 +134,7 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 				transition: 0.4s;
 
 				.svg-check {
-					fill: #242424;
+					fill: #8e8e8e;
 				}
 			}
 		}
@@ -181,7 +182,7 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 	}
 
 	.contact:not(:last-child) {
-		border-bottom: 1px solid #818181;
+		border-bottom: 1px solid #FFF;
 	}
 
 	.contact:not(:first-child) {
@@ -199,9 +200,9 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 
 
 	.contact-desc {
-		font-family: $GilroyMed;
+		font-family: $GilroySemiBold;
 		color: #191919;
-		font-size: 18px;	
+		font-size: 16px;	
 		margin-top: 10px;
 		margin-bottom: 10px;	
 		line-height: 18px;
@@ -217,11 +218,11 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 	.soc {
 		display: inline-block;
 		margin-top: 15px;
-		margin-right: 12px;
+		margin-right: 5px;
 
 		a {
 			display: flex;
-			background-color: #ef722c;
+			background-color: #FFF;
 			width: 30px;
 			height: 30px;
 			padding-top: 2px;
@@ -229,7 +230,8 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 		}
 
 		i {
-			color: #FFF;
+			font-size: 18px;
+			color: #191919;
 			margin: auto;
 		}
 	}
@@ -237,12 +239,12 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 		a {
 			transition: 0.4s;
 			background-color: transparent;
-			border: 1px solid #f86d52;
+			border: 1px solid #FFF;
 			text-decoration: none;
 		}
 
 		i {
-			color: #f86d52;
+			color: #FFF
 		}
 	}
 	//< CONTACTS

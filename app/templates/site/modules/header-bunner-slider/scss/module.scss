@@ -34,6 +34,12 @@ $colorBunnerDesc: #FFF;
 		min-height: 543px;
 	}
 
+	.mobile-bunner-bg {
+		display: none;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
 	.right-content {
 		float: right;
 		width: 48%;
@@ -80,25 +86,42 @@ $colorBunnerDesc: #FFF;
 
 @media screen and (max-width: 524px) and (min-width: 320px) {
 	.header-bunner-slider {
-		background-image: url(../images/mobile_bunner.jpg);
+		min-height: 366px;
+		.module_container {
+			background-image: none !important;
+			min-height: 345px;
+		}
 
 		.mobile-bunner-bg {
 			display: block;
 		}
 		
+		.owl-dots {
+			position: static;
+			margin-bottom: 20px;
+		}
+		.owl-dot {
+			width: 5px;
+			height: 5px;
+			margin-top: 10px;
+			border: none;
+			background-color: #242424;
+		}
 
 		.bunner-title {
-			font-size: 24px;
+			font-size: 26px;
 			line-height: 25px;
+			color: #242424;
 		}
 
 		.bunner-desc {
 			font-size: 18px;
 			margin-top: 16px;
+			color: #242424;
 		}
 		
 		.right-content {
-			margin-top: 200px;
+			margin-top: 15px;
 		}
 	}
 }

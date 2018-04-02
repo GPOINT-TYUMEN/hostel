@@ -75,6 +75,7 @@ $bgErrorInput: rgba(255, 0, 0, 0.12);
 			width: 100%;	
 			border: none;
 			@include radius(6px);
+			box-shadow: 8px 0 24px rgba(0,0,0,.1);
 			margin-top: 30px;
 			font-family: $GilroyMed;	
 			font-size: 18px;
@@ -175,12 +176,30 @@ $bgErrorInput: rgba(255, 0, 0, 0.12);
 	[class*="btn_"] {
 		margin-top: 19px;
 	}
-}
 
-@media screen and (max-width: 660px) and (min-width: 320px) {
 	.module-contacts-1 {
 		.input-2 {
 			max-width: 100%;
+		}
+	}
+
+	.politica.mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.module-contacts-1 {
+		.politica.mobile {
+			display: block;
+		}
+
+		.politica.desctop {
+			display: none;
+		}
+
+		form {
+			max-width: 410px;
 		}
 	}
 }
