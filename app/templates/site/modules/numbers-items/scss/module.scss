@@ -7,12 +7,14 @@ $colorNumbersTitle: #28333d;
 .numbers-items-1 {
 	padding-bottom: 55px;
 	
-	[class*="route-"] {
-		position: absolute;
+	.mobile {
 		display: none;
-		z-index: 10;
+	}
+
+	[class*="route-"] {
 		top: 125px;
 	}
+	
 	.route-right {
 		right: 0;
 	}
@@ -27,18 +29,19 @@ $colorNumbersTitle: #28333d;
 
 	.owl-dot {
 		display: inline-block;
-		width: 10px;
-		height: 10px;
+		width: 5px;
+		height: 5px;
 		@include radius;
-		border: 2px solid #242424;
-		margin-right: 5px;
-		margin-top: 15px;
+		background-color: #242424;
+		margin-right: 10px;
+		margin-top: 22px;
 	}
 
 	.owl-dot.active {
-		background-color: #ef722c;
-		border-color: #ef722c;
+		background-color: $bgBtn1;
+		border-color: $bgBtn1;
 	}
+
 	.numbers-title {
 		margin-top: 60px;
 		font-family: $GilroySemiBold;
@@ -59,6 +62,10 @@ $colorNumbersTitle: #28333d;
 		content: "";
 		display: inline-block;
 		width: 100%;
+	}
+	
+	.items {
+		position: relative;
 	}
 
 	.item {
@@ -94,7 +101,7 @@ $colorNumbersTitle: #28333d;
 
 @media screen and (max-width: 620px) and (min-width: 320px) {
 	.numbers-items-1 {
-		[class*="route-"] {
+		.mobile {
 			display: block;
 		}
 

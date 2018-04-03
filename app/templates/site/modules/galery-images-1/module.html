@@ -9,17 +9,23 @@
 	 		<img class="lazyload route-left desctop" data-src="images/left.png" src="">
 	 		<img class="lazyload route-right desctop" data-src="images/right.png" src="">
 
-	 		<div class="galery-images-wrapper">
+	 		<div class="galery-images-wrapper desctop">
 	 			<img class="lazyload" data-src="images/@@photo" src="">
-	 		</div>
 
-	 		<div class="button-container">
-		 		<div class="btn_4 show-modal" form="@@titleт">
-		 			Забронировать номер
-		 		</div>	 			
-	 		</div>
+	 			<div class="photoswipe-photos">
+ 					@@for (var i = 0; i < photos.length; i++) {
+	 					<span photo-src="`+photos[i].src+`" photo-w="`+photos[i].w+`" photo-h="`+photos[i].h+`"></span>			
+					}		 				
 
+	 			</div>
+	 		</div>
 	 	</div>
+
+ 		<div class="button-container">
+	 		<div class="btn_4 show-modal" form="@@title">
+	 			Забронировать номер
+	 		</div>	 			
+ 		</div>	 	
     </div>
   </div>
 </div>  

@@ -7,9 +7,10 @@
 //=include ../templates/site/modules/header-nav/js/module.js
 //=include ../templates/site/modules/header-bunner-slider/js/module.js
 //=include ../templates/site/modules/galery-images-1/js/module.js
+//=include ../templates/site/modules/catalog-2/js/module.js
 //=include ../templates/site/modules/catalog-slider/js/module.js
 //=include ../templates/site/modules/сonsequences-module-1/js/module.js
 //=include ../templates/site/modules/numbers-items/js/module.js
 //=include ../templates/site/modules/number-items-3/js/module.js
+//=include ../templates/site/modules/numbers-items-4/js/module.js
 //=include ../templates/site/modules/comments/js/module.js
-//=include ../templates/site/modules/comments-2/js/module.js

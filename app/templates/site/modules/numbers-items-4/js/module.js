@@ -1,12 +1,12 @@
 $(function () {
-	var numbersItems1 = $('.numbers-items-1 .items-wrapper'),
-	    numbersItems1Html =  $(numbersItems1).html();
-	var owlnumbersItems1 = numbersItems1,
-	    owlnumbersItems1Options = {
+	var numbersItems4 = $('.numbers-items-4 .items-wrapper'),
+	    numbersItems4Html =  $(numbersItems4).html();
+	var owlnumbersItems4 = numbersItems4,
+	    owlnumbersItems4Options = {
 	        loop:true,
 	        margin: 0,
 	        nav: false,
-	        items: 1,
+	        items: 4,
 	        lazyLoad: true,
 	        responsive:{
 	             0:{
@@ -20,11 +20,6 @@ $(function () {
 	                nav: false
 	            },
 
-	            748:{
-	                items: 3,
-	                nav: false,
-	            },
-
 	            960:{
 	                items: 3,
 	                nav: false,
@@ -32,25 +27,25 @@ $(function () {
 	        }        
 	    }; 
 	        
-	if ($(window).width() < 620) {
-	    startOwlowlnumbersItems1();
+	if ($(window).width() < 960) {
+	    startOwlowlnumbersItems4();
 	}
 
 	$(window).resize(function () {
-	    if ($(window).width() > 620) {
-	        owlnumbersItems1.trigger('destroy.owl.carousel');
-	        $(owlnumbersItems1).removeClass('owl-carousel');
-	        $(numbersItems1).html(numbersItems1Html);
+	    if ($(window).width() > 960) {
+	        owlnumbersItems4.trigger('destroy.owl.carousel');
+	        $(owlnumbersItems4).removeClass('owl-carousel');
+	        $(numbersItems4).html(numbersItems4Html);
 	    } else {
-	        if (!$(owlnumbersItems1).hasClass("owl-carousel")) {
-	            startOwlowlnumbersItems1();            
+	        if (!$(owlnumbersItems4).hasClass("owl-carousel")) {
+	            startOwlowlnumbersItems4();            
 	        }
 	    }
 	}); 
 
-	function startOwlowlnumbersItems1() {
-	    $(owlnumbersItems1).addClass('owl-carousel');
-	    owlnumbersItems1.owlCarousel(owlnumbersItems1Options);
+	function startOwlowlnumbersItems4() {
+	    $(owlnumbersItems4).addClass('owl-carousel');
+	    owlnumbersItems4.owlCarousel(owlnumbersItems4Options);
 	}
-	//< SEC сonsequences-module-1
+	//< SEC сonsequences-module-4
 });

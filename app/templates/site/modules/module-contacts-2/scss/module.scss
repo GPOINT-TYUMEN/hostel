@@ -252,6 +252,7 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.module-contacts-2 {
+		margin-top: 0;
 		.input-2 {
 			max-width: 100%;
 		}
@@ -273,7 +274,6 @@ $bgErrorInput2: rgba(255, 0, 0, 0.12);
 
 @media screen and (max-width: 524px) and (min-width: 320px) {
 	.module-contacts-2 {
-		margin-top: 40px;
 		.form-title {
 			font-size: 16px;
 			line-height: 18px;

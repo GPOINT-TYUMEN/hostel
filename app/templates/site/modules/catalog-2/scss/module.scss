@@ -2,6 +2,50 @@
 	background-color: #f5f5f5;
 	padding-bottom: 45px;
 
+	.owl-dots {
+		text-align: center;
+	}
+
+	.owl-dot {
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		@include radius;
+		background-color: #242424;
+		margin-right: 10px;
+		margin-top: 22px;
+	}
+
+	.owl-dot.active {
+		background-color: $bgBtn1;
+		border-color: $bgBtn1;
+	}
+
+	.catalog-2-content {
+		position: relative;
+	}
+
+	[class*="route-"] {
+		top: 140px;
+	}
+
+	[class*="route-"].mobile {
+		display: none;
+	}
+
+	[class*="route-"]:hover {
+		transition: 0.4s;
+		opacity: 0.7;
+	}
+
+	.route-left {
+		left: -10px;
+	}
+
+	.route-right {
+		right: -10px;
+	}
+
 	.catalog-wrapper {
 		text-align: justify;
 	}
@@ -21,6 +65,7 @@
 
 	.item-top {
 		@include bg('item-top.png');
+		background-size: contain;
 		height: 207px;
 		text-align: center;
 	}	
@@ -76,6 +121,43 @@
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.catalog-2 {
+		.catalog-wrapper {
+			text-align: center;
+		}
 
+		[class*="route-"].mobile {
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 560px) and (min-width: 320px) {
+	.catalog-2 {
+		.item {
+			max-width: 255px;
+		}
+		
+		.item-title {
+			font-size: 57px;
+			margin-top: 35px;
+		}
+
+		.item-top {
+			height: 177px;
+		}
+
+		.item-top:after {
+			margin-top: 9px;
+		}
+
+		.item-caption {
+			font-size: 16px;
+			line-height: 15px;
+		}
+
+		.item-desc {
+			font-size: 14px;
+			line-height: 15px;
+		}
 	}
 }
