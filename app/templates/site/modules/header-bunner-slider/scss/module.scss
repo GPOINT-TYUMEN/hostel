@@ -51,6 +51,13 @@ $colorBunnerDesc: #FFF;
 		color: $colorBunnerTitle;
 		font-size: 40px;
 		line-height: 40px;
+
+		h1 {
+			font-family: $GilroyBold;
+			color: $colorBunnerTitle;
+			font-size: 40px;
+			line-height: 40px;		
+		}
 	}
 
 	.bunner-desc {

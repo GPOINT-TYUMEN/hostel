@@ -70,6 +70,17 @@
 	return e;
 });
 lazyload();
+
+
+/*callback["lazyload"] = function () {
+	var images = $('.lazyload'),
+		imagesCount = images.length;
+
+	for (var index = 0; index < imagesCount; index++) {
+		$(images[index]).attr('src', $(images[index]).attr('data-src')); 	
+	};
+} */
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
@@ -3356,8 +3367,7 @@ $('.route-left').click(function() {
 
 $(function () {
 	$('body').on('click',"[metrika]", function () {
-		console.log('afaf');
-		yaCounter48163040.reachGoal($(this).attr('metrika'));
+		yaCounter40340665.reachGoal($(this).attr('metrika'));
 	});
 });
 	//>FORM

@@ -70,3 +70,13 @@
 	return e;
 });
 lazyload();
+
+
+/*callback["lazyload"] = function () {
+	var images = $('.lazyload'),
+		imagesCount = images.length;
+
+	for (var index = 0; index < imagesCount; index++) {
+		$(images[index]).attr('src', $(images[index]).attr('data-src')); 	
+	};
+} */

@@ -17,8 +17,17 @@ $colorBtn1: #242424;
 	font-size: 30px;
 	line-height: 32px;
 	margin-top: 50px;		
+
+	h1 {
+		display: inline-block;
+		font-family: $GilroySemiBold;
+		color: #242424;
+		font-size: 30px;
+		line-height: 32px;		
+	}
 }
-	
+
+
 .btn_1 {
 	width: 158px;
 	background-color: $bgBtn1;

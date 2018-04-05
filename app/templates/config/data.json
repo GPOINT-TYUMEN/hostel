@@ -5,9 +5,9 @@
 
 
 	"project": {
-		"author": "https://vk.comwe/bcoder2014",
-		"manager": "usachenkojulia",
-		"url": "http://arion.info"
+		"author": "https://vk.com/webcoder2014",
+		"manager": "https://vk.com/nike282",
+		"url": "http://koykomesto24.ru/"
 	},
 
 
@@ -22,6 +22,6 @@
 	},
 
 	"load": {
-		"dir": "arion"
+		"dir": "hostel_test"
 	}
 }
